@@ -10,7 +10,7 @@ import UIKit
 class CalculateViewController: UIViewController {
     
     private var calculateScreen = CalculateScreen()
-    private var count: [Count] = []
+    private var calculation: [Calculation] = []
     private var currentId: Int = 0
     
     override func loadView() {
@@ -20,12 +20,12 @@ class CalculateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupNavigationBar()
-        self.setupNavegationItem()
+        self.setupNavigationItem()
         self.calculateScreen.delegate(delegate: self)
         self.calculateScreen.configTextFieldDelegate(delegate: self)
     }
     
-    private func setupNavegationItem(){
+    private func setupNavigationItem(){
         let historyButton = UIBarButtonItem(title: "Ver Histórico", style: .done, target: self, action: #selector(historyTapped))
         navigationItem.rightBarButtonItem = historyButton
         navigationItem.rightBarButtonItem?.tintColor = .white
@@ -38,7 +38,7 @@ class CalculateViewController: UIViewController {
     }
     
     @objc private func historyTapped(){
-        let historyViewController = CalculatorHistoryViewController(counts: count)
+        let historyViewController = CalculatorHistoryViewController(counts: calculation)
         navigationController?.pushViewController(historyViewController, animated: true)
     }
     
@@ -61,19 +61,19 @@ extension CalculateViewController: CalculateScreenProtocol {
             return
         }
         
-        var resultado: String
-        let operacao = calculateScreen.currentOperation
+        var result: String
+        let operation = calculateScreen.currentOperation
         
-        switch operacao {
+        switch operation {
         case "+":
-            resultado = formatNumber(valor1 + valor2)
+            result = formatNumber(valor1 + valor2)
         case "-":
-            resultado = formatNumber(valor1 - valor2)
+            result = formatNumber(valor1 - valor2)
         case "*":
-            resultado = formatNumber(valor1 * valor2)
+            result = formatNumber(valor1 * valor2)
         case "/":
             if valor2 != 0 {
-                resultado = formatNumber(valor1 / valor2)
+                result = formatNumber(valor1 / valor2)
             } else {
                 showAlert(message: "Divisão por zero não permitida.")
                 return
@@ -83,17 +83,16 @@ extension CalculateViewController: CalculateScreenProtocol {
             return
         }
         
-        
         currentId += 1
         let id = currentId
         let data = Date()
         
-        let conta = Count(valorA: valorA, valorB: valorB, resultado: resultado, id: id, operacao: operacao, data: data)
-        count.append(conta)
+        let conta = Calculation(valorA: valorA, valorB: valorB, resultado: result, id: id, operacao: operation, data: data)
+        calculation.append(conta)
         
         showSuccessAlert()
         
-        calculateScreen.resultTextField.text = " Resultado da última operação: \(resultado)"
+        calculateScreen.resultTextField.text = " Resultado da última operação: \(result)"
         calculateScreen.valueATextField.text = ""
         calculateScreen.valueBTextField.text = ""
         calculateScreen.operationTextField.text = ""

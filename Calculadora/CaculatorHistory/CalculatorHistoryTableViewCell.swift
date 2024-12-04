@@ -18,15 +18,14 @@ class CalculatorHistoryTableViewCell: UITableViewCell {
     @IBOutlet weak var resultadoLabel: UILabel!
     @IBOutlet weak var dataLabel: UILabel!
     
-    func setupCell(count: Count){
+    func setupCell(count: Calculation){
         background.setCornerRadius(cornesRadius: 12, typeCorners:[.inferiorDireito, .inferiorEsquerdo, .superiorDireito, .superiorEsquerdo])
         idLabel.text = "ID: \(count.id)"
         valorALabel.text = "Primeiro valor: \(count.valorA)"
         valorBLabel.text = "Segundo valor: \(count.valorB)"
         operacaoLabel.text = "Operação escolhida: \(count.operacao)"
         resultadoLabel.text = "Resultado: \(count.resultado)"
-        var date: () = dataLabel.text = count.data.formatToString()
-        
+        dataLabel.text = count.data.formatToString()
     }
 
 }

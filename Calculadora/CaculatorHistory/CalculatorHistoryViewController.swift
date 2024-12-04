@@ -10,10 +10,10 @@ import UIKit
 class CalculatorHistoryViewController: UIViewController {
     
     private var calculatorHistoryScreen = CalculatorHistoryScreen()
-    private var counts: [Count] = []
+    private var calculation: [Calculation] = []
         
-        init(counts: [Count]) {
-            self.counts = counts
+        init(counts: [Calculation]) {
+            self.calculation = counts
             super.init(nibName: nil, bundle: nil)
         }
     
@@ -42,17 +42,17 @@ class CalculatorHistoryViewController: UIViewController {
 
 extension CalculatorHistoryViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if counts.isEmpty {
+        if calculation.isEmpty {
             calculatorHistoryScreen.setEmptyMessage("Nenhum cálculo encontrado")
         }else {
             calculatorHistoryScreen.restoreTableView()
         }
-        return counts.count
+        return calculation.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: CalculatorHistoryTableViewCell = tableView.dequeueReusableCell(for: indexPath)
-        let item = counts[indexPath.row]
+        let item = calculation[indexPath.row]
         cell.selectionStyle = .none
         cell.setupCell(count: item)
         return cell

@@ -40,7 +40,6 @@ extension UIView {
 }
 
 extension CACornerMask {
-    
     static public let inferiorDireito: CACornerMask = .layerMaxXMaxYCorner
     static public let inferiorEsquerdo: CACornerMask = .layerMinXMaxYCorner
     static public let superiorDireito: CACornerMask = .layerMaxXMinYCorner

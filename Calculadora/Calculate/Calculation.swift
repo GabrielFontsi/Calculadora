@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Count {
+class Calculation {
     
     var valorA: String
     var valorB: String

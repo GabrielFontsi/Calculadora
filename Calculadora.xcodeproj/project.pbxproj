@@ -13,16 +13,15 @@
 		33CDB48B2CFF81AB00154F11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33CDB48A2CFF81AB00154F11 /* Assets.xcassets */; };
 		33CDB48E2CFF81AB00154F11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33CDB48C2CFF81AB00154F11 /* LaunchScreen.storyboard */; };
 		33CDB4992CFF861600154F11 /* CalculatorHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDB4982CFF861600154F11 /* CalculatorHistoryViewController.swift */; };
-		33CDB4A12CFF891000154F11 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDB49D2CFF891000154F11 /* UIView.swift */; };
 		33CDB4A22CFF891000154F11 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDB49E2CFF891000154F11 /* UIView + Extension.swift */; };
-		33CDB4A32CFF891000154F11 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDB49F2CFF891000154F11 /* UITableView.swift */; };
-		33CDB4A42CFF891000154F11 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDB4A02CFF891000154F11 /* Layer.swift */; };
+		33CDB4A32CFF891000154F11 /* UITableView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDB49F2CFF891000154F11 /* UITableView + Extension.swift */; };
+		33CDB4A42CFF891000154F11 /* Layer + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDB4A02CFF891000154F11 /* Layer + Extension.swift */; };
 		33CDB4A92CFF8FC400154F11 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDB4A72CFF8FC400154F11 /* CalculateViewController.swift */; };
 		33CDB4AC2CFF93B100154F11 /* CalculateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDB4AB2CFF93B100154F11 /* CalculateScreen.swift */; };
 		33CDB4AE2CFF948600154F11 /* CalculatorHistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDB4AD2CFF948600154F11 /* CalculatorHistoryScreen.swift */; };
 		33CDB4B12CFF969000154F11 /* CalculatorHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDB4AF2CFF969000154F11 /* CalculatorHistoryTableViewCell.swift */; };
 		33CDB4B22CFF969000154F11 /* CalculatorHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33CDB4B02CFF969000154F11 /* CalculatorHistoryTableViewCell.xib */; };
-		33CDB4B62CFFBDCB00154F11 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDB4B52CFFBDCB00154F11 /* Button.swift */; };
+		33CDB4B62CFFBDCB00154F11 /* Button + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDB4B52CFFBDCB00154F11 /* Button + Extension.swift */; };
 		33CDB4B82CFFDE5900154F11 /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDB4B72CFFDE5900154F11 /* Calculation.swift */; };
 		33CDB4BA2CFFE00000154F11 /* Date + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CDB4B92CFFE00000154F11 /* Date + Extension.swift */; };
 /* End PBXBuildFile section */
@@ -36,16 +35,15 @@
 		33CDB48D2CFF81AB00154F11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33CDB48F2CFF81AB00154F11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33CDB4982CFF861600154F11 /* CalculatorHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorHistoryViewController.swift; sourceTree = "<group>"; };
-		33CDB49D2CFF891000154F11 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		33CDB49E2CFF891000154F11 /* UIView + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
-		33CDB49F2CFF891000154F11 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
-		33CDB4A02CFF891000154F11 /* Layer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
+		33CDB49F2CFF891000154F11 /* UITableView + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView + Extension.swift"; sourceTree = "<group>"; };
+		33CDB4A02CFF891000154F11 /* Layer + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Layer + Extension.swift"; sourceTree = "<group>"; };
 		33CDB4A72CFF8FC400154F11 /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		33CDB4AB2CFF93B100154F11 /* CalculateScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateScreen.swift; sourceTree = "<group>"; };
 		33CDB4AD2CFF948600154F11 /* CalculatorHistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorHistoryScreen.swift; sourceTree = "<group>"; };
 		33CDB4AF2CFF969000154F11 /* CalculatorHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		33CDB4B02CFF969000154F11 /* CalculatorHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorHistoryTableViewCell.xib; sourceTree = "<group>"; };
-		33CDB4B52CFFBDCB00154F11 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		33CDB4B52CFFBDCB00154F11 /* Button + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button + Extension.swift"; sourceTree = "<group>"; };
 		33CDB4B72CFFDE5900154F11 /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
 		33CDB4B92CFFE00000154F11 /* Date + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,11 +114,10 @@
 		33CDB49C2CFF891000154F11 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				33CDB49D2CFF891000154F11 /* UIView.swift */,
 				33CDB49E2CFF891000154F11 /* UIView + Extension.swift */,
-				33CDB4B52CFFBDCB00154F11 /* Button.swift */,
-				33CDB49F2CFF891000154F11 /* UITableView.swift */,
-				33CDB4A02CFF891000154F11 /* Layer.swift */,
+				33CDB4B52CFFBDCB00154F11 /* Button + Extension.swift */,
+				33CDB49F2CFF891000154F11 /* UITableView + Extension.swift */,
+				33CDB4A02CFF891000154F11 /* Layer + Extension.swift */,
 				33CDB4B92CFFE00000154F11 /* Date + Extension.swift */,
 				33A086FE2D000A0E00C4FFAC /* Double + Extension.swift */,
 			);
@@ -205,13 +202,12 @@
 				33CDB4822CFF81A800154F11 /* AppDelegate.swift in Sources */,
 				33CDB4BA2CFFE00000154F11 /* Date + Extension.swift in Sources */,
 				33CDB4A92CFF8FC400154F11 /* CalculateViewController.swift in Sources */,
-				33CDB4B62CFFBDCB00154F11 /* Button.swift in Sources */,
+				33CDB4B62CFFBDCB00154F11 /* Button + Extension.swift in Sources */,
 				33CDB4842CFF81A800154F11 /* SceneDelegate.swift in Sources */,
 				33CDB4A22CFF891000154F11 /* UIView + Extension.swift in Sources */,
 				33A086FF2D000A0E00C4FFAC /* Double + Extension.swift in Sources */,
-				33CDB4A32CFF891000154F11 /* UITableView.swift in Sources */,
-				33CDB4A42CFF891000154F11 /* Layer.swift in Sources */,
-				33CDB4A12CFF891000154F11 /* UIView.swift in Sources */,
+				33CDB4A32CFF891000154F11 /* UITableView + Extension.swift in Sources */,
+				33CDB4A42CFF891000154F11 /* Layer + Extension.swift in Sources */,
 				33CDB4992CFF861600154F11 /* CalculatorHistoryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
